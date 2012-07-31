@@ -44,6 +44,7 @@ function MainCtrl($scope,$http,twitterSearch,$timeout,$routeParams,$location){
 				if($scope.twitCount>1){
 					$scope.setInterval();
 				}
+				document.title = $scope.searchQuery +" - imgStream | The Social Image Stream Viewer";
 			}
 		}
 	};
