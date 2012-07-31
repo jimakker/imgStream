@@ -1,0 +1,73 @@
+<div class="search-bar">
+	<div class="search-bar-banner"><a href="#"><span style="color:skyblue;">img</span>Stream</a></div>
+	<form style="float:right;margin:0;" ng-submit="init();" class="form form-inline">
+		<input type="text" ng-model="searchQuery" placeholder="Twitter search!"/>
+		<button class="btn btn-inverse" type="submit">Search</button>
+	</form>	
+	<select ng-change="intervalChanged()" ng-model="interMSeconds" class="input-small" style="float:right;margin:0;margin-right:3px;"> 
+		<option value="5000">5 seconds</option>
+		<option value="10000">10 seconds</option>
+		<option value="15000">15 seconds</option>
+		<option value="20000">20 seconds</option>
+		<option value="30000">30 seconds</option>
+		<option value="45000">45 seconds</option>
+		<option value="60000">60 seconds</option>
+	</select>
+	<span ng-show="twitCount" class="twit-count">{{curPosHuman}} / {{twitCount}}</span>
+	<div class="slide-controls" ng-show="twit">
+		<span ng-click="previous();" title="Previous"><i class="icon-step-backward icon-white"></i></span>
+		<span ng-click="next();" title="Next"><i class="icon-step-forward icon-white"></i></span>
+		<span ng-click="clearInterval();" title="Stop"><i class="icon-stop icon-white"></i></span>
+		<span ng-click="setInterval();" title="Play"><i class="icon-play icon-white"></i></span>
+	</div>
+	<div class="social-buttons"><a title="Share on Twitter" target="_blank" href="https://twitter.com/intent/tweet?text={{searchQuery}} at imgStream&url={{url}}&related=imgStream&via=imgStream"><img src="img/twitter_icon.png" width="24"></img></a></div>
+</div>
+
+<div full class="twit-container" ng-show="twit">
+	<div class="twit-text">
+		<p><a ng-href="https://twitter.com/{{twit.from_user}}" title="View {{twit.from_user}} in Twitter.com" target="_blank"><img ng-src="{{twit.profile_image_url}}" style="width:25px;margin-right:5px;"/><span style="color:skyblue;">{{twit.from_user}}</span></a>: {{twit.text}} <span class="twit-date">{{twit.created_at | formatTime}}</span></p>
+		
+	</div>
+	<div class="full-background" ng-style="backgroundImage" style="height:100%;"></div>
+</div>
+
+<div class="row">
+	<div ng-hide="twit" class="span12">
+		<div class="welcome-message ">
+			<div style="padding:10px;">
+				<p>With <b><span style="color:skyblue;">img</span>Stream</b> you can <b>search <span style="color:skyblue;">Twitter</span></b> and view the twits as a <b>slideshow</b>. It's really useful for live events, etc. Give it a try!</p>
+				You can start searching something...
+				<form ng-submit="init();" class="form form-inline">
+					<input type="text" ng-model="searchQuery" placeholder="Twitter search!"/>
+					<button class="btn btn-inverse" type="submit">Search</button>
+				</form>	
+				Or selecting one of the trends below:
+				<ul style="width:100%;float:left;margin: 0 0 15px;padding:0;">
+					<li style="float:left;list-style:none; margin-right:10px;font-weight:bold;" ng-repeat="trend in globalTrends">
+						<span ng-click="trendSelected(trend.name);" title="search {{trend.name}} in Twitter.com" style="cursor:pointer;color:skyblue;text-decoration:underline;">{{trend.name}}<span>
+					</li>
+				</ul>
+				<br>
+				<br>
+				<h3><i class="icon-info-sign icon-white"></i> Using the top bar</h3>
+				<p style="font-size:medium;">This is how it works:
+					<br>
+					<img alt="Top bar controls image" title="Top bar controls" src="img/top_bar_controls.png"/>
+					<br>
+					<ul>
+						<li><span style="text-decoration:underline;">A</span> <b>Control the slideshow:</b> start, stop, step forward or backward.</li>
+						<li><span style="text-decoration:underline;">B</span> <b>Current position and total images counter</b></li>
+						<li><span style="text-decoration:underline;">C</span> <b>Select change interval</b></li>
+						<li><span style="text-decoration:underline;">D</span> <b>Twitter search</b></li>
+					</ul>
+				</p>
+				<h3><i class="icon-retweet icon-white"></i> Sharing</h3>
+				<p style="font-size:medium;">You can share the query you are viewing.</p>
+				<h3><i class="icon-exclamation-sign icon-white"></i> Disclaimer</h3>
+				<p style="font-size:medium;">
+					This is an afternoon experiment. Expect some errors.
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
