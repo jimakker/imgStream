@@ -1,6 +1,8 @@
 imgStream
 =========
 
+[JSONsOfAnarchy](https://twitter.com/JSONsOfAnarchy)
+
 ##English
 
 With imgStream you can search Twitter and view the twits as a slideshow.
