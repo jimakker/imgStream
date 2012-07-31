@@ -5,6 +5,7 @@
 function MainCtrl($scope,$http,twitterSearch,$timeout,$routeParams,$location){
 	$scope.interMSeconds = 15000;
 	$scope.url = encodeURIComponent($location.$$absUrl);
+	document.title = "imgStream | The Social Image Stream Viewer";
 	$scope.init = function(){
 		$location.search('search',$scope.searchQuery);
 		$scope.searchPages = 5;
