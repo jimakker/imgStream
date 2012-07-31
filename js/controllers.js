@@ -4,7 +4,6 @@
 
 function MainCtrl($scope,$http,twitterSearch,$timeout,$routeParams,$location){
 	$scope.interMSeconds = 15000;
-	console.log($location);
 	$scope.url = encodeURIComponent($location.$$absUrl);
 	$scope.init = function(){
 		$location.search('search',$scope.searchQuery);
