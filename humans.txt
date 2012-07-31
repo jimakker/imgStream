@@ -1,0 +1,26 @@
+/* the humans responsible & colophon */
+/* humanstxt.org */
+
+/* TEAM */
+
+  @JSONsOfAnarchy
+
+    Developer: jimakker
+    Twitter: jimakker
+
+    Ideas&Tests&Helps:
+
+      bateman2012
+      Twitter: bateman2012
+
+      pinicius
+      Twitter: pinicius
+
+      pblimarta
+      Twitter: pblimarta
+
+/* SITE */
+
+    Standards: HTML5, CSS3
+    Components: AngularJS, jQuery, Twitter Bootstrap, Moment.js, icons by glyphicons.com, background image pattern by subtlepatterns.com, Twitter API and icons are property of Twitter, Inc.
+    Source: https://github.com/jimakker/imgstream

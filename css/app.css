@@ -1,0 +1,144 @@
+/* app css stylesheet */
+
+.menu {
+  list-style: none;
+  border-bottom: 0.1em solid black;
+  margin-bottom: 2em;
+  padding: 0 0 0.5em;
+}
+
+.menu:before {
+  content: "[";
+}
+
+.menu:after {
+  content: "]";
+}
+
+.menu > li {
+  display: inline;
+}
+
+.menu > li:before {
+  content: "|";
+  padding-right: 0.3em;
+}
+
+.menu > li:nth-child(1):before {
+  content: "";
+  padding: 0;
+}
+
+body {
+  background: url('../img/dirty_old_shirt.png') repeat;
+}
+
+.full-background{
+  -webkit-background-size: contain!important;
+  -moz-background-size: contain!important;
+  -o-background-size: contain!important;
+  background-size: contain!important;
+}
+
+.twit-container {
+  position:absolute;
+  top:0;
+  left:0;
+}
+
+.twit-text{
+  background:rgba(0,0,0,.6);
+  position: absolute;
+  bottom:0;
+  width:100%;
+  margin-top: 38px;
+}
+
+.twit-text p {
+  color:#fff;
+  margin:0;
+  padding:10px;
+  font-size:25px;
+  line-height:25px;
+}
+
+.search-bar {
+  z-index:10;
+  position: absolute;
+  top:0;
+  right: 0;
+  padding: 5px;
+  width: 100%;
+  background:rgba(0,0,0,.7);
+}
+
+.twit-date {
+    color: #AAAAAA;
+    float: right;
+    font-size: 20px;
+}
+
+.slide-controls {
+    float: right;
+    margin-top: 5px;
+}
+
+
+.twit-count {
+    color: #FFFFFF;
+    float: right;
+    font-size: 20px;
+    padding: 5px;
+    text-align: right;
+    width: 75px;
+}
+.search-bar-banner {
+    color: #FFFFFF;
+    float: left;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.navbar-inner {
+  background-color: rgba(0, 0, 0, 0.7)!important;
+  background-image: none!important;
+}
+
+input, textarea, select, .uneditable-input {
+    background-color: #1A1A1A!important;
+    border: 1px solid #333333!important;
+    color: #ccc!important;
+}
+
+.welcome-message {
+    background: none repeat scroll 0 0 rgba(0, 0, 0, 0.7);
+    color: #CCCCCC;
+    width: 100%;
+    border-radius:10px;
+}
+
+.search-bar-banner a {
+  color: inherit;
+}
+
+.search-bar-banner a {
+  color: inherit!important;
+}
+
+.welcome-message p {
+  font-size: x-large;
+  line-height: normal;
+  color: #fff;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    vertical-align: inherit!important;
+}
+
+.social-buttons {
+  float:right;
+  margin-right: 10px;
+  margin-top: 2px;
+}
