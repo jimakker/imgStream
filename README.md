@@ -1,7 +1,7 @@
 imgStream
 =========
 
-[JSONsOfAnarchy](https://twitter.com/JSONsOfAnarchy)
+by [JSONsOfAnarchy](https://twitter.com/JSONsOfAnarchy)
 
 ##English
 
