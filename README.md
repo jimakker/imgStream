@@ -3,6 +3,8 @@ imgStream
 
 by [JSONsOfAnarchy](https://twitter.com/JSONsOfAnarchy)
 
+see imgStream working [here](http://jimakker.github.com/imgStream/)
+
 ##English
 
 With imgStream you can search Twitter and view the twits as a slideshow. imgStream is a standalone webapp, everything happens at the client side.
