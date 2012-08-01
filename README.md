@@ -3,7 +3,7 @@ imgStream
 
 by [JSONsOfAnarchy](https://twitter.com/JSONsOfAnarchy)
 
-see imgStream working [here](http://jimakker.github.com/imgStream/)
+Go to [imgStreamer.com](http://imgstreamer.com) to see imgStream working.
 
 #English
 

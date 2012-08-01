@@ -24,3 +24,10 @@
     Standards: HTML5, CSS3
     Components: AngularJS, jQuery, Twitter Bootstrap, Moment.js, icons by glyphicons.com, background image pattern by subtlepatterns.com, Twitter API and icons are property of Twitter, Inc.
     Source: https://github.com/jimakker/imgStream
+
+ _                 __ _                            
+(_)_ __ ___   __ _/ _\ |_ _ __ ___  __ _ _ __ ___   
+| | '_ ` _ \ / _` \ \| __| '__/ _ \/ _` | '_ ` _ \ 
+| | | | | | | (_| |\ \ |_| | |  __/ (_| | | | | | |
+|_|_| |_| |_|\__, \__/\__|_|  \___|\__,_|_| |_| |_|
+             |___/                                           
