@@ -23,4 +23,4 @@
 
     Standards: HTML5, CSS3
     Components: AngularJS, jQuery, Twitter Bootstrap, Moment.js, icons by glyphicons.com, background image pattern by subtlepatterns.com, Twitter API and icons are property of Twitter, Inc.
-    Source: https://github.com/jimakker/imgstream
+    Source: https://github.com/jimakker/imgStream
