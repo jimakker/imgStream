@@ -5,13 +5,13 @@
 		<button class="btn btn-inverse" type="submit">Search</button>
 	</form>	
 	<select ng-change="intervalChanged()" ng-model="interMSeconds" class="input-small" style="float:right;margin:0;margin-right:3px;"> 
-		<option value="5000">5 seconds</option>
-		<option value="10000">10 seconds</option>
-		<option value="15000">15 seconds</option>
-		<option value="20000">20 seconds</option>
-		<option value="30000">30 seconds</option>
-		<option value="45000">45 seconds</option>
-		<option value="60000">60 seconds</option>
+		<option value="5000">5 sec</option>
+		<option value="10000">10 sec</option>
+		<option value="15000">15 sec</option>
+		<option value="20000">20 sec</option>
+		<option value="30000">30 sec</option>
+		<option value="45000">45 sec</option>
+		<option value="60000">60 sec</option>
 	</select>
 	<span ng-show="twitCount" class="twit-count">{{curPosHuman}} / {{twitCount}}</span>
 	<div class="slide-controls" ng-show="twit">
@@ -25,7 +25,7 @@
 
 <div full class="twit-container" ng-show="twit">
 	<div class="twit-text">
-		<p><a ng-href="https://twitter.com/{{twit.from_user}}" title="View {{twit.from_user}} in Twitter.com" target="_blank"><img ng-src="{{twit.profile_image_url}}" style="width:25px;margin-right:5px;"/><span style="color:skyblue;">{{twit.from_user}}</span></a>: {{twit.text}} <span class="twit-date">{{twit.created_at | formatTime}}</span></p>
+		<p><a ng-href="https://twitter.com/intent/retweet?tweet_id={{twit.id_str}}" target="_blank" title="Retweet"><i class="icon-retweet icon-white"></i></a> <a ng-href="https://twitter.com/intent/favorite?tweet_id={{twit.id_str}}" target="_blank" title="Favorite"><i class="icon-star icon-white"></i></a> <a ng-href="https://twitter.com/{{twit.from_user}}" title="View {{twit.from_user}} in Twitter.com" target="_blank"><img ng-src="{{twit.profile_image_url}}" style="width:25px;margin-right:5px;"/><span style="color:skyblue;">{{twit.from_user}}</span></a>: {{twit.text}} <span class="twit-date">{{twit.created_at | formatTime}}</span></p>
 		
 	</div>
 	<div class="full-background" ng-style="backgroundImage" style="height:100%;"></div>
