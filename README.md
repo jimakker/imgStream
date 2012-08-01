@@ -17,7 +17,7 @@ Please, respect authoring.
 
 ##Installation
 
-Download the files or clone th erepository. Open index.html in a browser.
+Download the files or clone the repository. Open index.html in a browser.
 
 
 #Euskara
